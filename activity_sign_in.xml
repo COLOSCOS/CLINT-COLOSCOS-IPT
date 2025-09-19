@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Background Image -->
+
+        <!-- Content Container -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="App background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="ChatAI Logo" />
+
+            <!-- Form Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/my_white">
+
+                <!-- Welcome Back Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Back"
+                    android:textSize="22sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"/>
+
+
+
+                <!-- Username/Email Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username or Email"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your username or email"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:background="@drawable/background_gradient"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Password Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:background="@drawable/background_gradient"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Sign In Button -->
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"
+                    android:textAllCaps="true"
+                    android:backgroundTint="#667eea"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <!-- Sign Up Redirect -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account?"
+                        android:textSize="14sp"
+                        android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/btnSignUpRedirect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIGN UP"
+                        android:textAllCaps="true"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="#667eea"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

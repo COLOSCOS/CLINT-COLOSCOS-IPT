@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="App background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
+
+    <!-- Welcome Message - Make sure this ID is correct -->
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+
+    <!-- Success Message -->
+
+
+    <TextView
+        android:id="@+id/chatAIDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="Welcome to ChatAI\nYour intelligent conversation partner, available 24/7.\nAsk questions, get instant answers, or just have a friendly chat — powered by smart AI."
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnLogout"
+        android:layout_marginBottom="30dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/purple_500"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp" />
+
+    <!-- Logout Button - Make sure this ID is correct -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/purple_500"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp" />
+
+</RelativeLayout>
